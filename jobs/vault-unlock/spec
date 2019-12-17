@@ -1,0 +1,15 @@
+---
+name: vault-unlock
+
+templates:
+  post-start.sh: bin/post-start
+
+packages: []
+
+properties:
+  vault.port:
+    description: vault port
+    default: 8200
+  vault.unseal_keys:
+    description: List of unseal keys
+    default: {}
